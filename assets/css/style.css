@@ -694,7 +694,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .carousel-inner {
         height: 350px;
     }
@@ -712,7 +712,33 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         font-size: 1.5rem;
     }
 }
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+ */
+@media (max-width: 768px) {
+  .carousel-control .glyphicon {
+    display: none;
+  }
 
+  .fh5co-blog {
+    margin-bottom: 30px;
+  }
+
+  .blog-text h3 {
+    font-size: 18px;
+  }
+
+  .blog-bg {
+    background-size: cover;
+    height: 200px;
+  }
+
+  .stuff li {
+    display: inline-block;
+  }
+}
 
 
 
