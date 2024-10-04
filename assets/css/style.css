@@ -721,7 +721,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
   .carousel-control .glyphicon {
     display: none;
   }
-
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
   .fh5co-blog {
     margin-bottom: 30px;
   }
