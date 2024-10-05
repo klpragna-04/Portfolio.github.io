@@ -379,7 +379,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         6.  Skills
 --------------------------------------*/
 .skills {
-    
+    padding: 50px 0 10px;
+    border-top: 1px solid #e5ebf2;
 }
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
@@ -639,7 +640,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .carousel-control.left, 
 .carousel-control.right {
     background: none;
-    color: #333;
+    color: #cbc8c8;
     font-size: 2rem;
     top: 50%;
     transform: translateY(-50%);
@@ -690,15 +691,52 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .carousel-indicators .active {
-    background-color: #d31010;
+    background-color: #d92cf9;
 }
 
 /* Media Queries */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .carousel-inner {
-        height: 350px;
+        height: 300px;
     }
-
+    .carousel-inner .item {
+        position: relative;
+        min-width: 100%; /* Each slide takes up full width */
+    }
+    #myCarousel {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 20px;
+        /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); */
+        padding: 20px; /* Padding of 5px on both sides */
+    }
+    .carousel-indicators li {
+        background-color: #bbb;
+        border-radius: 50%;
+        width: 5px;
+        height: 10px;
+        margin: 0 5px;
+    }
+    
+    .carousel-indicators .active {
+        background-color: #d92cf9;
+    }
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        /* Adjust as needed */
+        display: flex;
+        transition: transform 0.5s ease; /* Smooth slide transition */
+    }
+    
+    .carousel-inner .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: fit;
+        border-radius: 10px;
+    }
     .carousel-caption h3 {
         font-size: 1.5rem;
     }
@@ -706,46 +744,27 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     .carousel-caption p {
         font-size: 1rem;
     }
-
+    .carousel-control.left, 
+   .carousel-control.right {
+    background: none;
+    color: #eaeef1;
+    font-size: 2rem;
+    top: 60%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+   }
+   .carousel-control.left:hover,
+   .carousel-control.right:hover {
+    opacity: 1;
+    }
     .carousel-control.left, 
     .carousel-control.right {
         font-size: 1.5rem;
     }
 }
-.carousel-inner img {
-  width: 100%;
-  height: auto;
-}
- */
-@media (max-width: 768px) {
-  .carousel-control .glyphicon {
-    display: none;
-  }
-.carousel-inner img {
-  width: 100%;
-  height: auto;
-}
-  .fh5co-blog {
-    margin-bottom: 30px;
-  }
 
-  .blog-text h3 {
-    font-size: 18px;
-  }
-
-  .blog-bg {
-    background-size: cover;
-    height: 200px;
-  }
-
-  .stuff li {
-    display: inline-block;
-  }
-}
-
-
-
-
+ 
 
 
 /*-------------------------------------
@@ -937,7 +956,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
   }
   @media screen and (max-width: 768px) {
     .fh5co-blog .blog-bg {
-      height: 400px;
+      height: 200px;
     }
   }
   @media screen and (max-width: 480px) {
