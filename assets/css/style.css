@@ -940,6 +940,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     float: left;
     margin-bottom: 40px;
   }
+.col-md-4 {
+    width: 50%; /* Set the width to 50% for two projects per row */
+    float: left;
+}
   @media screen and (max-width: 768px) {
     .fh5co-blog {
       width: 100%;
