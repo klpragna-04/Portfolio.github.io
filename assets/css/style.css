@@ -152,11 +152,6 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
 /*.nav li*/
-.typed-cursor {
-    font-size: 30px;
-    color: var(--dark);
-    animation: blink 1s step-end infinite;
-}
 @keyframes blink {
     50% {
         opacity: 0;
@@ -418,7 +413,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .progress-bar {
    background: #b636ff;
     border-radius: 3px;
-    z-index=10000;
    -webkit-transition: width 1.5s ease-in-out;
    -ms-transition: width 1.5s ease-in-out;
    -moz-transition: width 1.5s ease-in-out;
@@ -940,14 +934,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     float: left;
     margin-bottom: 40px;
   }
-.col-md-4 {
+  .col-md-4 {
     width: 50%; /* Set the width to 50% for two projects per row */
     float: left;
 }
-@media screen and (max-width: 768px) {
-    .col-md-4 {
-        width: 100%; /* Retain full-width on small screens as already defined */
-    }
   @media screen and (max-width: 768px) {
     .fh5co-blog {
       width: 100%;
@@ -956,8 +946,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
   .fh5co-blog .blog-bg {
     display: block;
     width: 100%;
-    background-size: cover;
-    border-bottom: 2px solid #999595;
+    background-size: contain;
+    border-bottom: 8px solid #999595;
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
