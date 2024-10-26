@@ -958,7 +958,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
       height: 200px;
     }
   }
-  @media screen and (max-width: 68px) {
+  @media screen and (max-width: 768px) {
     .fh5co-blog .blog-bg {
       height: 270px;
     }
